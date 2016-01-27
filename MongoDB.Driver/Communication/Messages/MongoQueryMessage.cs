@@ -21,7 +21,7 @@ using MongoDB.Bson.Serialization.Options;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoQueryMessage : MongoRequestMessage
+    public class MongoQueryMessage : MongoRequestMessage
     {
         // private fields
         private readonly string _collectionFullName;
@@ -29,7 +29,7 @@ namespace MongoDB.Driver.Internal
         private readonly int _maxDocumentSize;
         private readonly int _numberToSkip;
         private readonly int _numberToReturn;
-        private readonly IMongoQuery _query;
+        public readonly IMongoQuery _query;
         private readonly IMongoFields _fields;
 
         // constructors

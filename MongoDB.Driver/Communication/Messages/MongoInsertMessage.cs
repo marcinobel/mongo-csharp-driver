@@ -23,7 +23,7 @@ using MongoDB.Driver.Support;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoInsertMessage : MongoRequestMessage
+    public class MongoInsertMessage : MongoRequestMessage
     {
         // private fields
         private readonly Batch<InsertRequest> _batch;

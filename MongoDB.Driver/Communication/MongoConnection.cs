@@ -306,12 +306,16 @@ namespace MongoDB.Driver.Internal
 
         internal void SendMessage(MongoRequestMessage message)
         {
+            OnSendMessage?.Invoke(message);
+
             using (var buffer = new BsonBuffer(new MultiChunkBuffer(BsonChunkPool.Default), true))
             {
                 message.WriteTo(buffer);
                 SendMessage(buffer, message.RequestId);
             }
         }
+
+        public static Action<MongoRequestMessage> OnSendMessage { get; set; }
 
         // private methods
         private bool AcceptAnyCertificate(

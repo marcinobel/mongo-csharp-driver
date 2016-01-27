@@ -19,7 +19,7 @@ using MongoDB.Bson.IO;
 
 namespace MongoDB.Driver.Internal
 {
-    internal abstract class MongoRequestMessage : MongoMessage
+    public abstract class MongoRequestMessage : MongoMessage
     {
         // private static fields
         private static int __lastRequestId = 0;

@@ -21,13 +21,13 @@ using System.Text;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoDeleteMessage : MongoRequestMessage
+    public class MongoDeleteMessage : MongoRequestMessage
     {
         // private fields
         private readonly string _collectionFullName;
         private readonly RemoveFlags _flags;
         private readonly int _maxDocumentSize;
-        private readonly IMongoQuery _query;
+        public readonly IMongoQuery _query;
 
         // constructors
         internal MongoDeleteMessage(

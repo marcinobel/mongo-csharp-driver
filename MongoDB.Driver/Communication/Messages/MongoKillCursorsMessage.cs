@@ -17,7 +17,7 @@ using MongoDB.Bson.IO;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoKillCursorsMessage : MongoRequestMessage
+    public class MongoKillCursorsMessage : MongoRequestMessage
     {
         // private fields
         private long[] _cursorIds;

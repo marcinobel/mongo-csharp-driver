@@ -19,7 +19,7 @@ using System.Linq;
 
 namespace MongoDB.Driver.Support
 {
-    internal class BatchProgress<TItem>
+    public class BatchProgress<TItem>
     {
         // private fields
         private readonly int _batchCount;

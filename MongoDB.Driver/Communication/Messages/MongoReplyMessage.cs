@@ -22,7 +22,7 @@ using MongoDB.Bson.Serialization.Serializers;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoReplyMessage<TDocument> : MongoMessage
+    public class MongoReplyMessage<TDocument> : MongoMessage
     {
         // private fields
         private readonly BsonBinaryReaderSettings _readerSettings;

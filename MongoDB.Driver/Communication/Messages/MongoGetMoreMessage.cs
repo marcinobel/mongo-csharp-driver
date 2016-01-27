@@ -19,7 +19,7 @@ using MongoDB.Bson.IO;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoGetMoreMessage : MongoRequestMessage
+    public class MongoGetMoreMessage : MongoRequestMessage
     {
         // private fields
         private string _collectionFullName;

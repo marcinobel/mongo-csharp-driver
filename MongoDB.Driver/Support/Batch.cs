@@ -17,7 +17,7 @@ using System.Collections.Generic;
 
 namespace MongoDB.Driver.Support
 {
-    internal abstract class Batch<TItem>
+    public abstract class Batch<TItem>
     {
         // private fields
         private readonly IEnumerator<TItem> _enumerator;

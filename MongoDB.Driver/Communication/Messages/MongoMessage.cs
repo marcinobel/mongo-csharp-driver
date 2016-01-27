@@ -18,7 +18,7 @@ using MongoDB.Bson.IO;
 
 namespace MongoDB.Driver.Internal
 {
-    internal abstract class MongoMessage
+    public abstract class MongoMessage
     {
         // private fields
         private int _messageLength;

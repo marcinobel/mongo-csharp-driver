@@ -15,7 +15,7 @@
 
 namespace MongoDB.Driver.Internal
 {
-    internal enum MessageOpcode
+    public enum MessageOpcode
     {
         Reply = 1,
         Message = 1000,

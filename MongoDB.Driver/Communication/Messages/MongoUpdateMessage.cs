@@ -21,14 +21,14 @@ using MongoDB.Bson.Serialization.Options;
 
 namespace MongoDB.Driver.Internal
 {
-    internal class MongoUpdateMessage : MongoRequestMessage
+    public class MongoUpdateMessage : MongoRequestMessage
     {
         // private fields
         private readonly string _collectionFullName;
         private readonly bool _checkUpdateDocument;
         private readonly UpdateFlags _flags;
         private readonly int _maxDocumentSize;
-        private readonly IMongoQuery _query;
+        public readonly IMongoQuery _query;
         private readonly IMongoUpdate _update;
 
         // constructors
